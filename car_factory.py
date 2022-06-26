@@ -1,12 +1,9 @@
-import sys
-sys.path.insert(0, "E:/openCourse/forage-lyft/forage-lyft-starter-repo/component")
+from component.engine.capulet_engine import CapuletEngine
+from component.engine.sternman_engine import SternmanEngine
+from component.engine.willoughby_engine import WilloughbyEngine
 
-from capulet_engine import CapuletEngine
-from sternman_engine import SternmanEngine
-from willoughby_engine import WilloughbyEngine
-
-from spindler_battery import SpindlerBattery
-from nubbin_battery import NubbinBattery
+from component.battery.spindler_battery import SpindlerBattery
+from component.battery.nubbin_battery import NubbinBattery
 
 
 class CarFactory(ABC):
