@@ -9,7 +9,7 @@ from component.tire.carrigan_tire import CarriganTire
 from component.tire.octoprime_tire import OctoprimeTire
 
 
-class CarFactory(ABC):
+class CarFactory():
 
     def create_calliope(self, current_date, last_service_date, current_mileage, last_service_mileage, sensor_array):
         engine = CapuletEngine(current_mileage, last_service_mileage)
